@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0
+obj-m := coarse_stat_fs.o
+coarse_stat_fs-y := main.o cpu.o thread.o
+ccflags-y := -I$(src)/../include -Werror

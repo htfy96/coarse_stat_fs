@@ -1,0 +1,4 @@
+-xc
+-std=gnu11
+-Iinclude
+-Wall

@@ -1,0 +1,13 @@
+[Unit]
+Description=coarse_stat_fs scheduler/CPU accounting filesystem
+After=systemd-modules-load.service
+ConditionPathIsDirectory=/sys/kernel/coarse_stat_fs
+
+[Mount]
+What=coarse_stat_fs
+Where=/sys/kernel/coarse_stat_fs
+Type=coarse_stat_fs
+Options=nosuid,nodev,noexec
+
+[Install]
+WantedBy=sysinit.target

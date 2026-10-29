@@ -1,0 +1,59 @@
+# Kernel style, with checkpatch.pl's 100-column limit.
+BasedOnStyle: LLVM
+ColumnLimit: 100
+UseTab: ForContinuationAndIndentation
+TabWidth: 8
+IndentWidth: 8
+ContinuationIndentWidth: 8
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction: true
+  AfterControlStatement: Never
+  AfterEnum: false
+  AfterStruct: false
+  AfterUnion: false
+  AfterExternBlock: false
+  BeforeElse: false
+  SplitEmptyFunction: true
+AllowShortBlocksOnASingleLine: Never
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AlignAfterOpenBracket: Align
+AlignConsecutiveMacros: Consecutive
+AlignEscapedNewlines: Left
+AlignOperands: Align
+AlignTrailingComments: true
+BreakBeforeBinaryOperators: None
+BreakBeforeTernaryOperators: false
+BreakStringLiterals: false
+Cpp11BracedListStyle: false
+IndentCaseLabels: false
+IndentGotoLabels: false
+IndentPPDirectives: None
+InsertBraces: false
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 1
+PointerAlignment: Right
+ReflowComments: false
+SortIncludes: Never
+SpaceAfterCStyleCast: false
+SpaceBeforeParens: ControlStatementsExceptControlMacros
+SpacesBeforeTrailingComments: 1
+PenaltyBreakAssignment: 10
+PenaltyBreakBeforeFirstCallParameter: 30
+PenaltyBreakComment: 10
+PenaltyBreakFirstLessLess: 0
+PenaltyBreakString: 10
+PenaltyExcessCharacter: 100
+PenaltyReturnTypeOnItsOwnLine: 60
+ForEachMacros:
+  - TEST
+  - for_each_possible_cpu
+  - for_each_online_cpu
+  - for_each_cpu
+  - hlist_for_each_entry
+  - hlist_for_each_entry_rcu
+  - list_for_each_entry
+  - list_for_each_entry_safe

@@ -1,0 +1,8 @@
+# Style is checkpatch.pl's job.
+Checks: >
+  -*,
+  linuxkernel-*,
+  clang-analyzer-*,
+  -clang-analyzer-security.insecureAPI.*
+WarningsAsErrors: '*'
+HeaderFilterRegex: 'kmod/.*\.h$|include/uapi/coarse_stat_fs\.h$'
